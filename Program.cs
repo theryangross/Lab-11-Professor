@@ -7,6 +7,8 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+using Lab_11_Professor.Models;
 
 namespace Lab_11_Professor
 {
@@ -15,6 +17,8 @@ namespace Lab_11_Professor
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
+            
+            SeedData.Initialize(services);
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
