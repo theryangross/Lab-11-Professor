@@ -9,6 +9,6 @@ namespace Lab_11_Professor.Models
         {
         }
 
-        public DbSet<Lab_11_Professor.Models.Professor> Professor { get; set; }
+        public DbSet<Professor> Professor { get; set; }
     }
 }
