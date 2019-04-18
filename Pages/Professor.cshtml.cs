@@ -24,7 +24,7 @@ namespace Lab_11_Professor.Pages
         {
             Professors = _context.Professor.ToList();
 
-            ProfessorDropDown = new SelectList(Professors, "ID", "FirstName", "LastName");
+            ProfessorDropDown = new SelectList(Professors, "Id");
         }
 
         public void ButtonClick()
